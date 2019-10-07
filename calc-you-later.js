@@ -1,0 +1,1 @@
+const calculate = require('./calculate')
