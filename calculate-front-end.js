@@ -35,7 +35,16 @@ const calculate = require('./calculate-back-end.js')
 // 10 X 5
 
 // Here we store what's in those process.argv indices in well-named variables.
+let num1 = process.argv[2]
+let op = process.argv[3]
+let num2 = process.argv[4]
 
+if (op== '+' || (op== 'added to')){
+    let op = '+'
+}
+
+calculate(num1,num2,op)
+console.log(calculate(num1,num2, op))
 
 //As a stretch goal--done after everything else works!--the code below reassigns
 // the second number and operation variables to the values held in alternate
